@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<title>SimCD</title>
+<body onload="output_projects({{ gitlab_config }})">
+    <fieldset>
+        <legend>GitLab</legend>
+            <form method="post">
+
+                <div id="Select_project">
+                    <select name="gitlab_project_name" id="output_projects" onclick="output_variables({{ gitlab_config }}, {{ branches }})"></select>
+                </div>
+
+                <div id="table"></div>
+
+                <div>
+                    <br><button value="{{ Select_project }}">Run pipeline</button>
+                </div>
+            </form>
+    </fieldset>
+</body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'output_projects.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'output_variables.js') }}"></script>

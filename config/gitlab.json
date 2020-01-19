@@ -1,0 +1,17 @@
+{
+  "App": [
+    {
+      "ID": "project_id"
+    },
+    {
+      "URL": "https://gitlab.example.com/"
+    },
+    {
+      "TOKEN": "your_private_token"
+    },
+    {
+      "VARIABLE_NAME_1": "string",
+      "VARIABLE_NAME_2": ["value_1", "value_2", "value_3"]
+    }
+  ]
+}
