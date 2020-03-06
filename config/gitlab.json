@@ -1,17 +1,51 @@
 {
-  "App": [
-    {
-      "ID": "project_id"
+  "https://example1.gitlab.ru/": {
+    "Project_name_1": {
+      "ID": "123",
+      "Variables": {
+        "VAR_NAME_1": "",
+        "VAR_NAME_2": [
+          "value_1",
+          "value_2",
+          "value_3"
+        ]
+      }
     },
-    {
-      "URL": "https://gitlab.example.com/"
+    "Project_name_2": {
+      "ID": "456",
+      "Variables": {
+        "VAR_NAME_1": [
+          "value_1",
+          "value_2"
+        ]
+      }
     },
-    {
-      "TOKEN": "your_private_token"
-    },
-    {
-      "VARIABLE_NAME_1": "string",
-      "VARIABLE_NAME_2": ["value_1", "value_2", "value_3"]
+    "Project_name_3": {
+      "ID": "789",
+      "Variables": {
+        "VAR_NAME_1": ""
+      }
     }
-  ]
+  },
+  "https://example2.gitlab.ru/": {
+    "Project_name_4": {
+      "ID": "123",
+      "Variables": {
+        "VAR_NAME_1": [
+          "value_1",
+          "value_2",
+          "value_3",
+          "value_4",
+          "value_3"
+        ]
+      }
+    },
+    "Project_name_5": {
+      "ID": "567",
+      "Variables": {
+        "VAR_NAME_1": "",
+        "VAR_NAME_2": ""
+      }
+    }
+  }
 }

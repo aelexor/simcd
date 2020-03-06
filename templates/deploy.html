@@ -14,16 +14,15 @@
     <form method="post">
 
         <div align="center">
-            <h1> Welcome to simple CD </h1>
-            <select name="gitlab_url" class="js_list_gitlabs_url" style="width: 25%"></select>
+            <select name="list_project" class="js_list_projects" style="width: 25%"></select>
         </div>
-
-        <div align="center" style="margin: 10px" class="js_sign_up"></div>
-
+        <div align="center" style="margin: 10px" class="js_vars" ></div>
+        <div align="center" style="margin: 10px" class="js_refs" ></div>
+        <div align="center" style="margin: 10px" class="js_run" ></div>
         <script>
-            $(".js_list_gitlabs_url").ready(function(){
-                $.fn.list_gitlabs_url({{ gitlab_config | safe }});
-                $.fn.log_in();
+            $(".list_projects").ready(function(){
+                $.fn.list_projects({{ projects | safe }});
+                $.fn.choose_project({{ gitlab_config | safe }}, '{{ gitlab_url }}', {{ branches | safe }});
             });
         </script>
 

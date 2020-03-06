@@ -4,7 +4,7 @@ ADD . /var/lib/simcd/
 
 WORKDIR /var/lib/simcd/
 
-RUN pip install flask requests
+RUN pip3 install flask python-gitlab
 
 EXPOSE 5000
 
